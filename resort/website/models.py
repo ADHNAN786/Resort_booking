@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -17,5 +18,11 @@ class Customer(models.Model):
     Resort_name=models.CharField(max_length=100)
     Resort_price=models.IntegerField()
     Resort_place=models.CharField(max_length=100)
+    CheckIn=models.DateField()
+    CheckOut=models.DateField()
+    Adults=models.IntegerField()
+    Kids=models.IntegerField()
+
+    
 
     

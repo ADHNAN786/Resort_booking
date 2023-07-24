@@ -21,6 +21,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Rooms</a>
   <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
   <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+  <a href="{%url 'booked'%}" class="w3-bar-item w3-button w3-mobile">Booked </a>
+  <a href="{%url 'logout'%}" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Logout</a>
+
 </div>
 
 {% if messages %}
@@ -94,7 +97,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <p>Single bed</p>
         <p>15m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom"><a href="{% url 'resort'%}">Choose Room</a></button>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Rooms</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -105,7 +108,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <p>Queen-size bed</p>
         <p>25m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom"><a href="{% url 'resort'%}">Choose Room</a> </button>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Rooms</button>
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
@@ -116,7 +119,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         <p>King-size bed</p>
         <p>40m<sup>2</sup></p>
         <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
-        <button class="w3-button w3-block w3-black w3-margin-bottom"><a href="{% url 'resort'%}">Choose Room</a> </button>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Rooms</button>
       </div>
     </div>
   </div>

@@ -12,11 +12,11 @@ class LoginForm(forms.Form):
 class RegistraionForm(UserCreationForm):
     class Meta:
         model = User
-        fields=['first_name','last_name','username','password1','password2']
+        fields=['first_name','last_name','username','email','password1','password2']
 
 
-class CheckIn(forms.Form):
-    Indate=forms.DateField()
-    Outdate=forms.DateField()
+class Details(forms.Form):
+    CheckIn=forms.DateField()
+    CheckOut=forms.DateField()
     Adults=forms.IntegerField()
     Kids=forms.IntegerField()

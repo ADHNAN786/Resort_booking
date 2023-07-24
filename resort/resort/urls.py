@@ -23,9 +23,12 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',LoginPage.as_view(),name='login'),
+    path('logout',LogOut.as_view(),name='logout'),
+    path('adminout',AdminLogout.as_view(),name='out'),
     path('home',HomePage.as_view(),name='home'),
     path('admin',Admin.as_view(),name='admin'),
     path('resort',ResortView.as_view(),name='resort'),
+    path('booked',BookedView.as_view(),name='booked'),
     path('registration',Registration.as_view(),name='reg'),
     path('payment/<int:id>',Payment.as_view(),name='payment'),
     path('sort',filter,name='sort'),
